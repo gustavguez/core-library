@@ -14,14 +14,6 @@ export * from './lib/structure/ngx-gustavguez-table/ngx-gustavguez-table-action.
 export * from './lib/structure/ngx-gustavguez-table/ngx-gustavguez-table-action.argument';
 export * from './lib/structure/ngx-gustavguez-table/actions/ngx-gustavguez-table-show-action.model';
 
-// Utilities
-export * from './lib/utilities/array.utility';
-export * from './lib/utilities/date.utility';
-export * from './lib/utilities/form.utility';
-export * from './lib/utilities/number.utility';
-export * from './lib/utilities/string.utility';
-export * from './lib/utilities/window.utility';
-
 // Pipes
 export * from './lib/pipes/pretty-date.pipe';
 export * from './lib/pipes/pretty-hour.pipe';
@@ -35,17 +27,14 @@ export * from './lib/layout/ngx-gustavguez-nav/ngx-gustavguez-nav.component';
 export * from './lib/layout/ngx-gustavguez-nav-item/ngx-gustavguez-nav-item.model';
 export * from './lib/layout/ngx-gustavguez-nav-item/ngx-gustavguez-nav-item.component';
 
+// Lib module
+export * from './lib';
+
 // Api
-export * from './lib/api/api-response-strategies/api-root-response-strategy.model';
-export * from './lib/api/api-response-strategies/api-data-response-strategy.model';
-export * from './lib/api/api-response-strategies/api-response-strategy.interface';
-export * from './lib/api/api-response.model';
-export * from './lib/api/json-model.interface';
-export * from './lib/api/api.service';
+export * from './lib/api';
 
 // Forms
 export * from './lib/forms';
 
-// Lib module
-export * from './lib/status.enum';
-export * from './lib/ngx-gustavguez-core.module';
+// Utilities
+export * from './lib/utilities';
