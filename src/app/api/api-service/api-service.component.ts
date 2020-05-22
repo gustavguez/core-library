@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ApiService } from 'projects/ngx-gustavguez-core/src/public-api';
+import { ApiService } from 'projects/gustavguez/ngx-core/src/public-api';
 
 @Component({
 	selector: 'app-api-service',

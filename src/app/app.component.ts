@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { NgxGustavguezNavItemModel } from 'projects/ngx-gustavguez-core/src/public-api';
+import { NgxGustavguezNavItemModel } from 'projects/gustavguez/ngx-core/src/public-api';
 
 @Component({
 	selector: 'app-root',

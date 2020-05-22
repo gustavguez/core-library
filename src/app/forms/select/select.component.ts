@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { FormUtility } from 'projects/ngx-gustavguez-core/src/public-api';
+import { FormUtility } from 'projects/gustavguez/ngx-core/src/public-api';
 
 @Component({
 	selector: 'app-select',

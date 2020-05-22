@@ -2,14 +2,14 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { NgxGustavguezLoaderModule } from '../../structure/ngx-gustavguez-loader/ngx-gustavguez-loader.module';
-import { NgxGustavguezButtonComponent } from './ngx-gustavguez-button.component';
+import { NgxGustavguezSubmitComponent } from './ngx-gustavguez-submit.component';
 
 @NgModule({
-	declarations: [NgxGustavguezButtonComponent],
+	declarations: [NgxGustavguezSubmitComponent],
 	imports: [
 		CommonModule,
 		NgxGustavguezLoaderModule
 	],
-	exports: [NgxGustavguezButtonComponent]
+	exports: [NgxGustavguezSubmitComponent]
 })
-export class NgxGustavguezButtonModule { }
+export class NgxGustavguezSubmitModule { }

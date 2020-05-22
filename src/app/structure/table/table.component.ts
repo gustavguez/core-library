@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { NgxGustavguezTableOptionsModel, NgxGustavguezTableHeaderModel, NgxGustavguezTableShowActionModel, NgxGustavguezStatusEnum } from 'projects/ngx-gustavguez-core/src/public-api';
-import { NgxGustavguezTableActionArgument } from 'projects/ngx-gustavguez-core/src/lib/structure/ngx-gustavguez-table/ngx-gustavguez-table-action.argument';
+import { NgxGustavguezTableOptionsModel, NgxGustavguezTableHeaderModel, NgxGustavguezTableShowActionModel, StatusEnum } from 'projects/gustavguez/ngx-core/src/public-api';
+import { NgxGustavguezTableActionArgument } from 'projects/gustavguez/ngx-core/src/lib/structure/ngx-gustavguez-table/ngx-gustavguez-table-action.argument';
 
 @Component({
 	selector: 'app-table',
@@ -39,7 +39,7 @@ export class TableComponent implements OnInit {
 			if (model.id === 1000) return false;
 			return true;
 		});
-		showAction.status = NgxGustavguezStatusEnum.DARK;
+		showAction.status = StatusEnum.DARK;
 
 		// Overrides actions
 		this.tableOptions2.actions = [showAction];

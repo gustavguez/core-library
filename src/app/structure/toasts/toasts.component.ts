@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgxGustavguezToastsService } from 'projects/ngx-gustavguez-core/src/public-api';
+import { NgxGustavguezToastsService } from 'projects/gustavguez/ngx-core/src/public-api';
 
 @Component({
 	selector: 'app-toasts',

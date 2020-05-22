@@ -1,5 +1,5 @@
 // Structure components
-export * from './lib/structure/ngx-gustavguez-loader/ngx-gustavguez-loader.component';
+export * from './lib/structure';
 export * from './lib/structure/ngx-gustavguez-popup/ngx-gustavguez-popup.component';
 export * from './lib/structure/ngx-gustavguez-page-header/ngx-gustavguez-page-header.component';
 export * from './lib/structure/ngx-gustavguez-card/ngx-gustavguez-card.component';
@@ -44,14 +44,8 @@ export * from './lib/api/json-model.interface';
 export * from './lib/api/api.service';
 
 // Forms
-export * from './lib/forms/ngx-gustavguez-button/ngx-gustavguez-button.component';
-export * from './lib/forms/ngx-gustavguez-submit/ngx-gustavguez-submit.component';
-export * from './lib/forms/ngx-gustavguez-input-holder/ngx-gustavguez-input-holder.component';
-export * from './lib/forms/ngx-gustavguez-input/ngx-gustavguez-input.component';
-export * from './lib/forms/ngx-gustavguez-textarea/ngx-gustavguez-textarea.component';
-export * from './lib/forms/ngx-gustavguez-select/ngx-gustavguez-select.component';
-export * from './lib/forms/ngx-gustavguez-tags/ngx-gustavguez-tags.component';
+export * from './lib/forms';
 
 // Lib module
 export * from './lib/status.enum';
-export * from './lib/ngx-core.module';
+export * from './lib/ngx-gustavguez-core.module';

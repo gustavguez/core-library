@@ -4,11 +4,22 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { 
+	NgxGustavguezCoreModule, 
+	NgxGustavguezButtonModule, 
+	NgxGustavguezLoaderModule,
+	NgxGustavguezSubmitModule,
+	NgxGustavguezInputModule,
+	NgxGustavguezSelectModule,
+	NgxGustavguezTagsModule,
+	NgxGustavguezTextareaModule,
+	NgxGustavguezInputHolderModule
+} from 'projects/gustavguez/ngx-core/src/public-api';
+
 import { AppComponent } from './app.component';
 import { ApiServiceComponent } from './api/api-service/api-service.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { NgxGustavguezCoreModule } from 'projects/ngx-gustavguez-core/src/public-api';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoaderComponent } from './structure/loader/loader.component';
 import { CardComponent } from './structure/card/card.component';
@@ -49,7 +60,15 @@ import { TagsComponent } from './forms/tags/tags.component';
 		AppRoutingModule,
 		RouterModule,
 		ReactiveFormsModule,
-		NgxGustavguezCoreModule
+		NgxGustavguezCoreModule,
+		NgxGustavguezButtonModule,
+		NgxGustavguezSubmitModule,
+		NgxGustavguezInputModule,
+		NgxGustavguezSelectModule,
+		NgxGustavguezTagsModule,
+		NgxGustavguezTextareaModule,
+		NgxGustavguezInputHolderModule,
+		NgxGustavguezLoaderModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
