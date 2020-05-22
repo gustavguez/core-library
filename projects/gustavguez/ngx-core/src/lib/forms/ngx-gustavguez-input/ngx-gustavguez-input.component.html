@@ -1,0 +1,17 @@
+<div class="input-group" [formGroup]="form">
+	<ngx-gustavguez-input-holder
+		[form]="form"
+		[controlName]="controlName"
+		[requiredErrorText]="requiredErrorText">
+		<label 
+			*ngIf="label"
+			[for]="controlId">{{ label }}</label>
+		<input 
+			class="form-control"
+			(change)="onEmitChange()"
+			[id]="controlId"
+			[type]="type"
+			[placeholder]="placeholder"
+			[formControlName]="controlName">
+	</ngx-gustavguez-input-holder>
+</div>

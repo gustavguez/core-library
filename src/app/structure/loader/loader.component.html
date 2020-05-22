@@ -1,0 +1,18 @@
+<ngx-gustavguez-page-header text="Loader"></ngx-gustavguez-page-header>
+
+<section class="content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-12 text-center p-3">
+				<ngx-gustavguez-button
+					(onClick)="onToggleLoading()"
+					[text]="'Toggle loading'"></ngx-gustavguez-button>
+			</div>
+			<div class="col-md-6 col-sm-6 col-12 text-center p-3">
+				<ngx-gustavguez-loader 
+					[loadingText]="'Custom text...'"
+					[loading]="loading"></ngx-gustavguez-loader>
+			</div>
+		</div>
+	</div>
+</section>

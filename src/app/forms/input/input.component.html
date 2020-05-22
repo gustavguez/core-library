@@ -1,0 +1,72 @@
+<ngx-gustavguez-page-header text="Input"></ngx-gustavguez-page-header>
+
+<section class="content">
+	<div class="container-fluid">
+		
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-12 p-3">
+				<form [formGroup]="form" (submit)="onSubmit()">
+					<ngx-gustavguez-input
+						[form]="form"
+						[type]="'text'"
+						[label]="'Type text:'"
+						[placeholder]="'Enter description'"
+						[controlName]="'description'"
+						[controlId]="'description'"
+						[requiredErrorText]="'This field is required.'"></ngx-gustavguez-input>	
+
+					<ngx-gustavguez-submit
+						[text]="'Send form'"></ngx-gustavguez-submit>
+				</form>
+			</div>
+
+			<div class="col-md-6 col-sm-6 col-12 p-3">
+				<form [formGroup]="form" (submit)="onSubmit()">
+					<ngx-gustavguez-input
+						[form]="form"
+						[type]="'number'"
+						[label]="'Type number:'"
+						[placeholder]="'Enter description'"
+						[controlName]="'description'"
+						[controlId]="'description'"
+						[requiredErrorText]="'This field is required.'"></ngx-gustavguez-input>	
+
+					<ngx-gustavguez-submit
+						[text]="'Send form'"></ngx-gustavguez-submit>
+				</form>
+			</div>
+
+			<div class="col-md-6 col-sm-6 col-12 p-3">
+				<form [formGroup]="form" (submit)="onSubmit()">
+					<ngx-gustavguez-input
+						[form]="form"
+						[type]="'date'"
+						[label]="'Type date:'"
+						[placeholder]="'Enter description'"
+						[controlName]="'description'"
+						[controlId]="'description'"
+						[requiredErrorText]="'This field is required.'"></ngx-gustavguez-input>	
+
+					<ngx-gustavguez-submit
+						[text]="'Send form'"></ngx-gustavguez-submit>
+				</form>
+			</div>
+
+			<div class="col-md-6 col-sm-6 col-12 p-3">
+				<form [formGroup]="form" (submit)="onSubmit()">
+					<ngx-gustavguez-input
+						[form]="form"
+						[type]="'datetime-local'"
+						[label]="'Type datetime-local:'"
+						[placeholder]="'Enter description'"
+						[controlName]="'description'"
+						[controlId]="'description'"
+						[requiredErrorText]="'This field is required.'"></ngx-gustavguez-input>	
+
+					<ngx-gustavguez-submit
+						[text]="'Send form'"></ngx-gustavguez-submit>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

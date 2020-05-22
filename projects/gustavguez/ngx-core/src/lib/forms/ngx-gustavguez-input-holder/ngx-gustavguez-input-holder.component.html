@@ -1,0 +1,14 @@
+<div class="form-group">
+    <!-- CONTAINER -->
+    <ng-content></ng-content>
+
+    <!-- VALIDATIONS -->
+    <div class="text-danger" *ngIf="form">
+        <small *ngIf="
+                form.get(controlName).touched 
+                && form.get(controlName).errors
+                && form.get(controlName).errors.required">
+            {{ requiredErrorText ? requiredErrorText : "Este campo es requerido"  }}
+        </small>
+    </div>
+</div>

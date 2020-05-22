@@ -1,0 +1,28 @@
+<ngx-gustavguez-page-header text="Input holder"></ngx-gustavguez-page-header>
+
+<section class="content">
+	<div class="container-fluid">
+		<form [formGroup]="form" (submit)="onSubmit()">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-12 p-3">
+					
+					<div class="input-group">
+						<ngx-gustavguez-input-holder
+							[form]="form"
+							[controlName]="'description'"
+							[requiredErrorText]="'This field is required.'">
+							<input 
+								type="text" 
+								class="form-control"
+								formControlName="description">
+						</ngx-gustavguez-input-holder>
+					</div>	
+
+					<ngx-gustavguez-submit
+						[text]="'Send form'"></ngx-gustavguez-submit>
+
+				</div>
+			</div>
+		</form>
+	</div>
+</section>

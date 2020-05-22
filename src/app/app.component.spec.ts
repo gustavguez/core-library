@@ -1,13 +1,9 @@
 import { TestBed, async } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
       declarations: [
         AppComponent
       ],
@@ -20,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'core-library'`, () => {
+  it(`should have as title 'gustavguez-core-library'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('core-library');
+    expect(app.title).toEqual('gustavguez-core-library');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('core-library app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('gustavguez-core-library app is running!');
   });
 });

@@ -1,0 +1,9 @@
+<div class="input-group pb-2">
+	<button 
+		type="button" 
+		class="btn btn-danger btn-sm ml-1"
+		(click)="onEmitSelect(option)"
+		*ngFor="let option of options">
+		{{ option[optionLabel] }}
+	</button>
+</div>

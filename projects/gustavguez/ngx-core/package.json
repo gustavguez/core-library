@@ -5,5 +5,17 @@
     "@angular/common": "^9.1.6",
     "@angular/core": "^9.1.7",
     "tslib": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gustavguez/core-library"
+  },
+  "author": { 
+      "name" : "Gustavo Rodríguez", 
+      "email" : "gustavguez@gmail.com", 
+      "url" : "http://gustavorodriguez.com.uy"
+   },
+  "dependencies": {
+    "moment": "^2.24.0"
   }
 }

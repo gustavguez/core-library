@@ -1,0 +1,24 @@
+<div 
+    class="toasts-top-right fixed mr-2 mt-2" 
+    [style.display]=" toasts.length ? 'block' : 'none' ">
+    <!-- Then put toasts within -->
+    <div 
+        class="toast show fade bg-{{ toast.status }}" 
+        *ngFor="let toast of toasts; let i = index">
+        <div class="toast-header text-light">
+
+            <strong class="mr-auto">
+                {{ brandTitle }}
+            </strong>
+
+            <button 
+                (click)="onCloseToast(toast)"
+                type="button" 
+                class="btn btn-link text-light">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="toast-body">{{ toast.message }}</div>
+    </div>
+</div>

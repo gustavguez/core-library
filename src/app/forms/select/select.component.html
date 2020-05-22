@@ -1,0 +1,27 @@
+<ngx-gustavguez-page-header text="Select"></ngx-gustavguez-page-header>
+
+<section class="content">
+	<div class="container-fluid">
+		
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-12 p-3">
+				<form [formGroup]="form" (submit)="onSubmit()">
+					<ngx-gustavguez-select
+						[form]="form"
+						[label]="'Options:'"
+						[placeholder]="'Select option'"
+						[controlName]="'option'"
+						[controlId]="'option'"
+						[options]="options"
+						[optionId]="'id'"
+						[optionLabel]="'name'"
+						[requiredErrorText]="'This field is required.'"></ngx-gustavguez-select>	
+
+					<ngx-gustavguez-submit
+						[text]="'Send form'"></ngx-gustavguez-submit>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</section>

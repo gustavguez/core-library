@@ -1,0 +1,38 @@
+<a 
+    *ngIf="navItem.isLink"
+    (click)="onNavItemClick($event)"
+    [routerLink]="navItem.action"
+    routerLinkActive="active"
+    href="#" 
+    class="nav-link">
+    <i class="nav-icon {{ navItem.icon }}"></i>
+    <p>
+        {{ navItem.display }}
+        <i *ngIf="isParent" class="right fas fa-angle-left"></i>
+    </p>
+</a>
+
+<a 
+    *ngIf="!navItem.isLink"
+    (click)="onNavItemClick($event)"
+    href="#" 
+    class="nav-link">
+    <i class="nav-icon {{ navItem.icon }}"></i>
+    <p>
+        {{ navItem.display }}
+        <i *ngIf="isParent" class="right fas fa-angle-left"></i>
+    </p>
+</a>
+
+<ng-container *ngIf="navItem.childs">
+    <ul 
+        [style.display]="state ? 'block' : 'none'"
+        class="nav nav-treeview">
+        <li 
+            class="nav-item"
+            ngxGustavguezNavItem
+            (onNavItem)="onNavItemChild($event)"
+            [navItem]="child"
+            *ngFor="let child of navItem.childs"></li>
+    </ul>
+</ng-container>

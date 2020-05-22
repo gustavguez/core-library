@@ -1,0 +1,23 @@
+<div class="input-group" [formGroup]="form">
+	<ngx-gustavguez-input-holder
+		[form]="form"
+		[controlName]="controlName"
+		[requiredErrorText]="requiredErrorText">
+		<label 
+			*ngIf="label"
+			[for]="controlId">{{ label }}</label>
+		<select 
+			class="custom-select"
+			(change)="onEmitChange()"
+			[id]="controlId"
+			[formControlName]="controlName">
+			<option 
+				[value]="null" 
+				disabled 
+				selected>{{ placeholder }}</option>
+			<option 
+				*ngFor="let option of options"
+				[value]="option[optionId]">{{ option[optionLabel] }}</option>
+		</select>
+	</ngx-gustavguez-input-holder>
+</div>

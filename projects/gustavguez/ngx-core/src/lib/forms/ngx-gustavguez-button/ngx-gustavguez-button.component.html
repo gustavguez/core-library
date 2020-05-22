@@ -1,0 +1,10 @@
+<button 
+    type="button" 
+	class="btn btn-{{ status ? status : 'primary' }} btn-block"
+	(click)="onDoClick()">
+    <span *ngIf="!loading">{{ text }}</span>
+
+    <ngx-gustavguez-loader 
+        [loadingText]="loadingText"
+        [loading]="loading"></ngx-gustavguez-loader>
+</button>
