@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { NgxGustavguezNavItemModel } from 'projects/gustavguez/ngx-core/src/public-api';
+import { NavItemModel } from 'projects/gustavguez/ngx-core/src/public-api';
 
 @Component({
 	selector: 'app-root',
@@ -15,26 +15,26 @@ export class AppComponent {
 		private router: Router ) { }
 
 	// Models
-	menuItems: NgxGustavguezNavItemModel[] = [
-		new NgxGustavguezNavItemModel("Api", "fas fa-hand-holding-usd", null, [
-			new NgxGustavguezNavItemModel("Api service", "fas fa-home", "api/api-service")
+	menuItems: NavItemModel[] = [
+		new NavItemModel("Api", "fas fa-hand-holding-usd", null, [
+			new NavItemModel("Api service", "fas fa-home", "api/api-service")
 		]),
-		new NgxGustavguezNavItemModel("Structure", "fas fa-hand-holding-usd", null, [
-			new NgxGustavguezNavItemModel("Loader", "fas fa-home", "structure/loader"),
-			new NgxGustavguezNavItemModel("Card", "fas fa-home", "structure/card"),
-			new NgxGustavguezNavItemModel("Info box", "fas fa-home", "structure/info-box"),
-			new NgxGustavguezNavItemModel("Page header", "fas fa-home", "structure/page-header"),
-			new NgxGustavguezNavItemModel("Popup", "fas fa-home", "structure/popup"),
-			new NgxGustavguezNavItemModel("Toasts", "fas fa-home", "structure/toasts"),
-			new NgxGustavguezNavItemModel("Table", "fas fa-home", "structure/table"),
+		new NavItemModel("Structure", "fas fa-hand-holding-usd", null, [
+			new NavItemModel("Loader", "fas fa-home", "structure/loader"),
+			new NavItemModel("Card", "fas fa-home", "structure/card"),
+			new NavItemModel("Info box", "fas fa-home", "structure/info-box"),
+			new NavItemModel("Page header", "fas fa-home", "structure/page-header"),
+			new NavItemModel("Popup", "fas fa-home", "structure/popup"),
+			new NavItemModel("Toasts", "fas fa-home", "structure/toasts"),
+			new NavItemModel("Table", "fas fa-home", "structure/table"),
 		]),
-		new NgxGustavguezNavItemModel("Forms", "fas fa-hand-holding-usd", null, [
-			new NgxGustavguezNavItemModel("Button", "fas fa-home", "forms/button"),
-			new NgxGustavguezNavItemModel("Input holder", "fas fa-home", "forms/input-holder"),
-			new NgxGustavguezNavItemModel("Input", "fas fa-home", "forms/input"),
-			new NgxGustavguezNavItemModel("Textarea", "fas fa-home", "forms/textarea"),
-			new NgxGustavguezNavItemModel("Select", "fas fa-home", "forms/select"),
-			new NgxGustavguezNavItemModel("Tags", "fas fa-home", "forms/tags")
+		new NavItemModel("Forms", "fas fa-hand-holding-usd", null, [
+			new NavItemModel("Button", "fas fa-home", "forms/button"),
+			new NavItemModel("Input holder", "fas fa-home", "forms/input-holder"),
+			new NavItemModel("Input", "fas fa-home", "forms/input"),
+			new NavItemModel("Textarea", "fas fa-home", "forms/textarea"),
+			new NavItemModel("Select", "fas fa-home", "forms/select"),
+			new NavItemModel("Tags", "fas fa-home", "forms/tags")
 		]),
 	]
 

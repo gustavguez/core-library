@@ -1,6 +1,6 @@
 import { Directive, HostBinding, OnInit } from '@angular/core';
 
-import { NgxGustavguezMainSidebarService } from '../ngx-gustavguez-main-sidebar/ngx-gustavguez-main-sidebar.service';
+import { MainSidebarService } from '../ngx-gustavguez-main-sidebar/main-sidebar.service';
 
 @Directive({
 	selector: '[ngxGustavguezMainContainer]'
@@ -19,7 +19,7 @@ export class NgxGustavguezMainContainerDirective implements OnInit {
 
 	// Inject services
 	constructor(
-		private ngxGustavguezMainSidebarService: NgxGustavguezMainSidebarService) { }
+		private mainSidebarService: MainSidebarService) { }
 
 	// On component init
 	ngOnInit(): void {
@@ -27,10 +27,10 @@ export class NgxGustavguezMainContainerDirective implements OnInit {
 		this.loadHostClasses(false);
 
 		// Watch sidebarState change
-		this.ngxGustavguezMainSidebarService.onChangeState.subscribe((state: boolean) => {
+		this.mainSidebarService.onChangeState.subscribe((state: boolean) => {
 			this.loadHostClasses(state);
 		});
-		this.ngxGustavguezMainSidebarService.onToggleState.subscribe(() => {
+		this.mainSidebarService.onToggleState.subscribe(() => {
 			this.loadHostClasses(!this.state);
 		});
 	}

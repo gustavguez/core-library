@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
-import { NgxGustavguezMainSidebarService } from './ngx-gustavguez-main-sidebar.service';
 import { ArrayUtility } from '../../utilities/array.utility';
-import { NgxGustavguezNavItemModel } from '../ngx-gustavguez-nav-item/ngx-gustavguez-nav-item.model';
+import { MainSidebarService } from './main-sidebar.service';
+import { NavItemModel } from '../ngx-gustavguez-nav-item/nav-item.model';
 
 @Component({
 	selector: 'ngx-gustavguez-main-sidebar',
@@ -16,7 +16,7 @@ export class NgxGustavguezMainSidebarComponent implements OnInit {
 	@Input() userIsLogged: boolean;
 	@Input() userAvatar: string;
 	@Input() userName: string;
-	@Input() menuItems: NgxGustavguezNavItemModel[];
+	@Input() menuItems: NavItemModel[];
 
 	// Outputs
 	@Output() onBrandLink: EventEmitter<void> = new EventEmitter();
@@ -26,7 +26,7 @@ export class NgxGustavguezMainSidebarComponent implements OnInit {
 
 	// Inject services
 	constructor(
-		private ngxGustavguezMainSidebarService: NgxGustavguezMainSidebarService
+		private mainSidebarService: MainSidebarService
 	) { }
 
 	// On component init
@@ -36,14 +36,14 @@ export class NgxGustavguezMainSidebarComponent implements OnInit {
 	}
 
 	// Custom events
-	onMenuItemClick(menuItem: NgxGustavguezNavItemModel): void {
+	onMenuItemClick(menuItem: NavItemModel): void {
 		// Check
 		if (ArrayUtility.hasValue(menuItem.childs)) {
 			// Toggle state
 			this.menuItemsStates[menuItem.id] = menuItem.id in this.menuItemsStates ? !this.menuItemsStates[menuItem.id] : false;
 		} else {
 			// Close sidebar
-			this.ngxGustavguezMainSidebarService.changeState(false);
+			this.mainSidebarService.changeState(false);
 		}
 	}
 
@@ -51,14 +51,14 @@ export class NgxGustavguezMainSidebarComponent implements OnInit {
 		event.preventDefault();
 
 		// Close sidebar
-		this.ngxGustavguezMainSidebarService.changeState(false);
+		this.mainSidebarService.changeState(false);
 
 		// Event emitter
 		this.onBrandLink.emit();
 	}
 
 	onCloseSidebar(): void {
-		this.ngxGustavguezMainSidebarService.changeState(false);
+		this.mainSidebarService.changeState(false);
 	}
 
 }

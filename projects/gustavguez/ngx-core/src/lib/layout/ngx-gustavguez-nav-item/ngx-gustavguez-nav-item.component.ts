@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { NgxGustavguezNavItemModel } from './ngx-gustavguez-nav-item.model';
+
+import { NavItemModel } from './nav-item.model';
 
 @Component({
 	selector: '[ngxGustavguezNavItem]',
@@ -8,11 +9,11 @@ import { NgxGustavguezNavItemModel } from './ngx-gustavguez-nav-item.model';
 })
 export class NgxGustavguezNavItemComponent {
 	// Inputs
-	@Input() navItem: NgxGustavguezNavItemModel;
+	@Input() navItem: NavItemModel;
 	@Input() isParent: boolean;
 	@Input() state: boolean;
 
-	@Output() onNavItem: EventEmitter<NgxGustavguezNavItemModel> = new EventEmitter();
+	@Output() onNavItem: EventEmitter<NavItemModel> = new EventEmitter();
 
 	// Custome events
 	onNavItemClick(event: MouseEvent): void {
@@ -20,7 +21,7 @@ export class NgxGustavguezNavItemComponent {
 		this.onNavItem.emit(this.navItem);
 	}
 
-	onNavItemChild(child: NgxGustavguezNavItemModel): void {
+	onNavItemChild(child: NavItemModel): void {
 		this.onNavItem.emit(child);
 	}
 }

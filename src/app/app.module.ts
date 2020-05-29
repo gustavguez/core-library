@@ -13,7 +13,11 @@ import {
 	NgxGustavguezSelectModule,
 	NgxGustavguezTagsModule,
 	NgxGustavguezTextareaModule,
-	NgxGustavguezInputHolderModule
+	NgxGustavguezInputHolderModule,
+	NgxGustavguezMainContainerModule,
+	NgxGustavguezMainSiderbarModule,
+	NgxGustavguezNavModule,
+	NgxGustavguezNavItemModule
 } from 'projects/gustavguez/ngx-core/src/public-api';
 
 import { AppComponent } from './app.component';
@@ -68,7 +72,11 @@ import { TagsComponent } from './forms/tags/tags.component';
 		NgxGustavguezTagsModule,
 		NgxGustavguezTextareaModule,
 		NgxGustavguezInputHolderModule,
-		NgxGustavguezLoaderModule
+		NgxGustavguezLoaderModule,
+		NgxGustavguezMainContainerModule,
+		NgxGustavguezMainSiderbarModule,
+		NgxGustavguezNavModule,
+		NgxGustavguezNavItemModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

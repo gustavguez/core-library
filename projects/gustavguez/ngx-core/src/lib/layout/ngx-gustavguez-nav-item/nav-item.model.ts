@@ -1,7 +1,7 @@
 import { StringUtility } from '../../utilities/string.utility';
 import { ArrayUtility } from '../../utilities/array.utility';
 
-export class NgxGustavguezNavItemModel {
+export class NavItemModel {
 
 	public id: string;
 	public isLink: boolean;
@@ -10,7 +10,7 @@ export class NgxGustavguezNavItemModel {
 		public display?: string,
 		public icon?: string,
 		public action?: string,
-		public childs?: NgxGustavguezNavItemModel[]
+		public childs?: NavItemModel[]
 	) {
 		this.id = StringUtility.randomString();
 		this.isLink = !ArrayUtility.hasValue(childs);

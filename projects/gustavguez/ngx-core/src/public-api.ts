@@ -14,19 +14,6 @@ export * from './lib/structure/ngx-gustavguez-table/ngx-gustavguez-table-action.
 export * from './lib/structure/ngx-gustavguez-table/ngx-gustavguez-table-action.argument';
 export * from './lib/structure/ngx-gustavguez-table/actions/ngx-gustavguez-table-show-action.model';
 
-// Pipes
-export * from './lib/pipes/pretty-date.pipe';
-export * from './lib/pipes/pretty-hour.pipe';
-export * from './lib/pipes/pretty-number.pipe';
-
-// Layout
-export * from './lib/layout/ngx-gustavguez-main-container/ngx-gustavguez-main-container.directive';
-export * from './lib/layout/ngx-gustavguez-main-sidebar/ngx-gustavguez-main-sidebar.component';
-export * from './lib/layout/ngx-gustavguez-main-sidebar/ngx-gustavguez-main-sidebar.service';
-export * from './lib/layout/ngx-gustavguez-nav/ngx-gustavguez-nav.component';
-export * from './lib/layout/ngx-gustavguez-nav-item/ngx-gustavguez-nav-item.model';
-export * from './lib/layout/ngx-gustavguez-nav-item/ngx-gustavguez-nav-item.component';
-
 // Lib module
 export * from './lib';
 
@@ -38,3 +25,9 @@ export * from './lib/forms';
 
 // Utilities
 export * from './lib/utilities';
+
+// Pipes
+export * from './lib/pipes';
+
+// Layout
+export * from './lib/layout';

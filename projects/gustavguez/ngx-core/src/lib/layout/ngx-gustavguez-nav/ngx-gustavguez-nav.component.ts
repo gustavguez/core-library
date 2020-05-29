@@ -1,6 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-
-import { NgxGustavguezMainSidebarService } from '../ngx-gustavguez-main-sidebar/ngx-gustavguez-main-sidebar.service';
+import { MainSidebarService } from '../ngx-gustavguez-main-sidebar/main-sidebar.service';
 
 @Component({
 	selector: 'ngx-gustavguez-nav',
@@ -23,12 +22,12 @@ export class NgxGustavguezNavComponent {
 
 	// Inject services
 	constructor(
-		private ngxGustavguezMainSidebarService: NgxGustavguezMainSidebarService) { }
+		private mainSidebarService: MainSidebarService) { }
 
 	// Custom events
 	onToggleMenu(event: MouseEvent): void {
 		event.preventDefault();
-		this.ngxGustavguezMainSidebarService.toggleState();
+		this.mainSidebarService.toggleState();
 	}
 
 	onToggleUserMenu(event: MouseEvent): void {
