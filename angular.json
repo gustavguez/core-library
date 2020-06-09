@@ -28,6 +28,8 @@
               "src/assets"
             ],
             "styles": [
+			  "src/assets/fontawesome/css/all.min.css",
+			  "node_modules/admin-lte/dist/css/adminlte.min.css",
               "src/styles.scss"
             ],
             "scripts": []
