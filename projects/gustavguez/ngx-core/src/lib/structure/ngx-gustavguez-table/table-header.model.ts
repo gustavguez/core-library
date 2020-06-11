@@ -1,4 +1,4 @@
-export class NgxGustavguezTableHeaderModel {
+export class TableHeaderModel {
 	// Constructor
 	constructor(
 		public display?: string) {

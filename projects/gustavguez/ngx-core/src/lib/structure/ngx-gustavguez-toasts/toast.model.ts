@@ -1,7 +1,7 @@
 import { StatusEnum } from '../../status.enum';
 import { StringUtility } from '../../utilities/string.utility';
 
-export class NgxGustavguezToastModel {
+export class ToastModel {
 	public id: string;
 	public timerInstance: any;
 

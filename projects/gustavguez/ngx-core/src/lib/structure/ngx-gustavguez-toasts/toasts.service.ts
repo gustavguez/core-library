@@ -1,28 +1,28 @@
 import { Injectable, EventEmitter } from '@angular/core';
 
-import { NgxGustavguezToastModel } from './ngx-gustavguez-toast.model';
+import { ToastModel } from './toast.model';
 import { StatusEnum } from '../../status.enum';
 
 @Injectable({
 	providedIn: 'root',
 })
-export class NgxGustavguezToastsService {
+export class ToastsService {
 
 	// Event emmiters
-	public onToastAdded: EventEmitter<NgxGustavguezToastModel> = new EventEmitter();
+	public onToastAdded: EventEmitter<ToastModel> = new EventEmitter();
 
 	// Methods
 	public addError(message: string): void {
 		// Open toast
 		this.onToastAdded.emit(
-			new NgxGustavguezToastModel(message, StatusEnum.DANGER)
+			new ToastModel(message, StatusEnum.DANGER)
 		);
 	}
 
 	public addSuccess(message: string): void {
 		// Open toast
 		this.onToastAdded.emit(
-			new NgxGustavguezToastModel(message, StatusEnum.SUCCESS)
+			new ToastModel(message, StatusEnum.SUCCESS)
 		);
 	}
 

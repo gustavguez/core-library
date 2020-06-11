@@ -1,6 +1,6 @@
 import { StatusEnum } from '../../status.enum';
 
-export class NgxGustavguezTableActionModel {
+export class TableActionModel {
 
 	// Models
 	public btnClasses: string;

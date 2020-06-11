@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NgxGustavguezToastsService } from 'projects/gustavguez/ngx-core/src/public-api';
+
+import { ToastsService } from 'projects/gustavguez/ngx-core/src/public-api';
 
 @Component({
 	selector: 'app-toasts',
@@ -10,7 +11,7 @@ export class ToastsComponent {
 
 	// Inject services
 	constructor(
-		private toastsService: NgxGustavguezToastsService
+		private toastsService: ToastsService
 	) { }
 
 	// Custom events

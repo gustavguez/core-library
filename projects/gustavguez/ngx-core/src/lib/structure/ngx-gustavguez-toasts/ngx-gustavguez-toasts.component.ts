@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { NgxGustavguezToastModel } from './ngx-gustavguez-toast.model';
-import { NgxGustavguezToastsService } from './ngx-gustavguez-toasts.service';
+import { ToastModel } from './toast.model';
+import { ToastsService } from './toasts.service';
 import { ArrayUtility } from '../../utilities/array.utility';
 
 @Component({
@@ -14,27 +14,27 @@ export class NgxGustavguezToastsComponent implements OnInit {
 	@Input() brandTitle: string;
 
 	// Models
-	toasts: NgxGustavguezToastModel[] = [];
+	toasts: ToastModel[] = [];
 
 	// Inject services
 	constructor(
-		private ngxGustavguezToastsService: NgxGustavguezToastsService) { }
+		private toastsService: ToastsService) { }
 
 	// On component init
 	ngOnInit(): void {
 		// Watch toast added
-		this.ngxGustavguezToastsService.onToastAdded.subscribe((toast: NgxGustavguezToastModel) => {
+		this.toastsService.onToastAdded.subscribe((toast: ToastModel) => {
 			this.openToast(toast);
 		});
 	}
 
 	// Custom events
-	onCloseToast(toast: NgxGustavguezToastModel): void {
+	onCloseToast(toast: ToastModel): void {
 		this.closeToast(toast);
 	}
 
 	// Private methods
-	private openToast(toast: NgxGustavguezToastModel): void {
+	private openToast(toast: ToastModel): void {
 		// Before push create timeout
 		toast.timerInstance = setTimeout(() => {
 			this.closeToast(toast);
@@ -44,10 +44,10 @@ export class NgxGustavguezToastsComponent implements OnInit {
 		this.toasts.unshift(toast);
 	}
 
-	private closeToast(toast: NgxGustavguezToastModel): void {
+	private closeToast(toast: ToastModel): void {
 		// Check
-		if (toast instanceof NgxGustavguezToastModel) {
-			ArrayUtility.find(this.toasts, toast.id, (toastFound: NgxGustavguezToastModel, index: number) => {
+		if (toast instanceof ToastModel) {
+			ArrayUtility.find(this.toasts, toast.id, (toastFound: ToastModel, index: number) => {
 				// Clear timer instance
 				clearTimeout(toastFound.timerInstance);
 

@@ -1,6 +1,6 @@
 import { EventEmitter } from '@angular/core';
 
-export class NgxGustavguezPopupService {
+export class PopupService {
 	public onStateChange: EventEmitter<boolean> = new EventEmitter();
 
 	public changeState(state: boolean): void {

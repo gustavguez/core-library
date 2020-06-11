@@ -1,7 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
-import { NgxGustavguezTableOptionsModel, NgxGustavguezTableHeaderModel, NgxGustavguezTableShowActionModel, StatusEnum } from 'projects/gustavguez/ngx-core/src/public-api';
-import { NgxGustavguezTableActionArgument } from 'projects/gustavguez/ngx-core/src/lib/structure/ngx-gustavguez-table/ngx-gustavguez-table-action.argument';
+import { 
+	TableActionArgument, 
+	StatusEnum, 
+	TableShowActionModel, 
+	TableHeaderModel, 
+	TableOptionsModel 
+} from 'projects/gustavguez/ngx-core/src/public-api';
 
 @Component({
 	selector: 'app-table',
@@ -10,32 +15,32 @@ import { NgxGustavguezTableActionArgument } from 'projects/gustavguez/ngx-core/s
 })
 export class TableComponent implements OnInit {
 	// Models
-	tableOptions: NgxGustavguezTableOptionsModel;
-	tableOptions2: NgxGustavguezTableOptionsModel;
+	tableOptions: TableOptionsModel;
+	tableOptions2: TableOptionsModel;
 	users: any[];
 
 	// On component init
 	ngOnInit(): void {
 		// Create options
-		this.tableOptions = new NgxGustavguezTableOptionsModel(
+		this.tableOptions = new TableOptionsModel(
 			[
-				new NgxGustavguezTableHeaderModel("ID"),
-				new NgxGustavguezTableHeaderModel("Name"),
-				new NgxGustavguezTableHeaderModel("Last name")
+				new TableHeaderModel("ID"),
+				new TableHeaderModel("Name"),
+				new TableHeaderModel("Last name")
 			],
 			["id", "name", "lastName"]
 		);
 		// Create options 2
-		this.tableOptions2 = new NgxGustavguezTableOptionsModel(
+		this.tableOptions2 = new TableOptionsModel(
 			[
-				new NgxGustavguezTableHeaderModel("Name"),
-				new NgxGustavguezTableHeaderModel("Last name")
+				new TableHeaderModel("Name"),
+				new TableHeaderModel("Last name")
 			],
 			["name", "lastName"]
 		);
 
 		// Create show action
-		const showAction: NgxGustavguezTableShowActionModel = new NgxGustavguezTableShowActionModel((model: any): boolean => {
+		const showAction: TableShowActionModel = new TableShowActionModel((model: any): boolean => {
 			if (model.id === 1000) return false;
 			return true;
 		});
@@ -52,7 +57,7 @@ export class TableComponent implements OnInit {
 	}
 
 	// Custome events
-	onTableAction(args: NgxGustavguezTableActionArgument): void {
+	onTableAction(args: TableActionArgument): void {
 		console.log(args);
 	}
 
