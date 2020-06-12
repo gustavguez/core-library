@@ -1,10 +1,11 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { NumberUtility } from '../utilities/number.utility';
+
+import { NumberUtility } from '../../utilities/number.utility';
 
 @Pipe({
-	name: 'prettyNumber'
+	name: 'ngxGustavguezPrettyNumber'
 })
-export class PrettyNumberPipe implements PipeTransform {
+export class NgxGustavguezPrettyNumberPipe implements PipeTransform {
 
 	transform(value: any): any {
 		return NumberUtility.valid(value) ? NumberUtility.format(value) : '0';

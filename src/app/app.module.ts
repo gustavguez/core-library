@@ -23,7 +23,8 @@ import {
 	NgxGustavguezToastsModule,
 	NgxGustavguezInfoBoxModule,
 	NgxGustavguezTableModule,
-	NgxGustavguezPageHeaderModule
+	NgxGustavguezPageHeaderModule,
+	NgxGustavguezPrettyNumberModule
 } from 'projects/gustavguez/ngx-core/src/public-api';
 
 import { AppComponent } from './app.component';
@@ -89,7 +90,8 @@ import { TagsComponent } from './forms/tags/tags.component';
 		NgxGustavguezToastsModule,
 		NgxGustavguezTableModule,
 		NgxGustavguezInfoBoxModule,
-		NgxGustavguezPageHeaderModule
+		NgxGustavguezPageHeaderModule,
+		NgxGustavguezPrettyNumberModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
