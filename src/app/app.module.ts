@@ -4,28 +4,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { 
-	NgxGustavguezCoreModule, 
-	NgxGustavguezButtonModule, 
-	NgxGustavguezLoaderModule,
-	NgxGustavguezSubmitModule,
-	NgxGustavguezInputModule,
-	NgxGustavguezSelectModule,
-	NgxGustavguezTagsModule,
-	NgxGustavguezTextareaModule,
-	NgxGustavguezInputHolderModule,
-	NgxGustavguezMainContainerModule,
-	NgxGustavguezMainSiderbarModule,
-	NgxGustavguezNavModule,
-	NgxGustavguezNavItemModule,
-	NgxGustavguezPopupModule,
-	NgxGustavguezCardModule,
-	NgxGustavguezToastsModule,
-	NgxGustavguezInfoBoxModule,
-	NgxGustavguezTableModule,
-	NgxGustavguezPageHeaderModule,
-	NgxGustavguezPrettyNumberModule
-} from 'projects/gustavguez/ngx-core/src/public-api';
+import { NgxGustavguezCoreModule } from 'projects/gustavguez/ngx-core/src/public-api';
 
 import { AppComponent } from './app.component';
 import { ApiServiceComponent } from './api/api-service/api-service.component';
@@ -71,27 +50,7 @@ import { TagsComponent } from './forms/tags/tags.component';
 		AppRoutingModule,
 		RouterModule,
 		ReactiveFormsModule,
-		NgxGustavguezCoreModule,
-		NgxGustavguezButtonModule,
-		NgxGustavguezSubmitModule,
-		NgxGustavguezInputModule,
-		NgxGustavguezSelectModule,
-		NgxGustavguezTagsModule,
-		NgxGustavguezTextareaModule,
-		NgxGustavguezInputHolderModule,
-		NgxGustavguezMainContainerModule,
-		NgxGustavguezMainSiderbarModule,
-		NgxGustavguezNavModule,
-		NgxGustavguezNavItemModule,
-		NgxGustavguezPopupModule,
-		NgxGustavguezLoaderModule,
-		NgxGustavguezPopupModule,
-		NgxGustavguezCardModule,
-		NgxGustavguezToastsModule,
-		NgxGustavguezTableModule,
-		NgxGustavguezInfoBoxModule,
-		NgxGustavguezPageHeaderModule,
-		NgxGustavguezPrettyNumberModule
+		NgxGustavguezCoreModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

@@ -1,6 +1,3 @@
-// Structure components
-export * from './lib/structure';
-
 // Lib module
 export * from './lib';
 
@@ -18,3 +15,6 @@ export * from './lib/pipes';
 
 // Layout
 export * from './lib/layout';
+
+// Structure components
+export * from './lib/structure';
