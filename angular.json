@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "core-library": {
@@ -28,8 +28,8 @@
               "src/assets"
             ],
             "styles": [
-			  "src/assets/fontawesome/css/all.min.css",
-			  "node_modules/admin-lte/dist/css/adminlte.min.css",
+              "src/assets/fontawesome/css/all.min.css",
+              "node_modules/admin-lte/dist/css/adminlte.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -165,6 +165,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "core-library"
+    }
+  },
+  "defaultProject": "core-library",
+  "cli": {
+    "analytics": "dba453a7-211c-44fe-8bb7-3dd58c649a85"
+  }
 }
