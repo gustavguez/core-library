@@ -1,0 +1,13 @@
+import { Pipe } from '@angular/core';
+import { DateUtility } from '../../utilities/date.utility';
+export class NgxGustavguezPrettyHourPipe {
+    transform(value) {
+        return DateUtility.prettyHour(value);
+    }
+}
+NgxGustavguezPrettyHourPipe.decorators = [
+    { type: Pipe, args: [{
+                name: 'ngxGustavguezPrettyHour'
+            },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmd4LWd1c3Rhdmd1ZXotcHJldHR5LWhvdXIucGlwZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL2d1c3Rhdmd1ZXovbmd4LWNvcmUvc3JjL2xpYi9waXBlcy9uZ3gtZ3VzdGF2Z3Vlei1wcmV0dHktaG91ci9uZ3gtZ3VzdGF2Z3Vlei1wcmV0dHktaG91ci5waXBlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxJQUFJLEVBQWlCLE1BQU0sZUFBZSxDQUFDO0FBRXBELE9BQU8sRUFBRSxXQUFXLEVBQUUsTUFBTSw4QkFBOEIsQ0FBQztBQUszRCxNQUFNLE9BQU8sMkJBQTJCO0lBRXZDLFNBQVMsQ0FBQyxLQUFVO1FBQ25CLE9BQU8sV0FBVyxDQUFDLFVBQVUsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUN0QyxDQUFDOzs7WUFQRCxJQUFJLFNBQUM7Z0JBQ0wsSUFBSSxFQUFFLHlCQUF5QjthQUMvQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFBpcGUsIFBpcGVUcmFuc2Zvcm0gfSBmcm9tICdAYW5ndWxhci9jb3JlJztcblxuaW1wb3J0IHsgRGF0ZVV0aWxpdHkgfSBmcm9tICcuLi8uLi91dGlsaXRpZXMvZGF0ZS51dGlsaXR5JztcblxuQFBpcGUoe1xuXHRuYW1lOiAnbmd4R3VzdGF2Z3VlelByZXR0eUhvdXInXG59KVxuZXhwb3J0IGNsYXNzIE5neEd1c3Rhdmd1ZXpQcmV0dHlIb3VyUGlwZSBpbXBsZW1lbnRzIFBpcGVUcmFuc2Zvcm0ge1xuXG5cdHRyYW5zZm9ybSh2YWx1ZTogYW55KTogYW55IHtcblx0XHRyZXR1cm4gRGF0ZVV0aWxpdHkucHJldHR5SG91cih2YWx1ZSk7XG5cdH1cblxufVxuIl19
