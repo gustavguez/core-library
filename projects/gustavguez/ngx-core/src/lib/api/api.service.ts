@@ -89,13 +89,17 @@ export class ApiService {
 
 	// Fetch
 	public fetchData(uri: string, params?: any): Observable<ApiResponseModel> {
-		// Check cache of observables
+		// headers obj
+		const headers: any = {};
+
+		//Check access token
+		if(this.accessToken) {
+			headers.Authorization = `Bearer ${this.accessToken}`
+		}
 
 		// Get options
 		const httpOptions = {
-			headers: new HttpHeaders({
-				Authorization: 'Bearer ' + this.accessToken
-			}),
+			headers: new HttpHeaders(headers),
 			params: params
 		};
 
@@ -110,13 +114,17 @@ export class ApiService {
 
 	// Fetch
 	public getObj(uri: string, id?: any): Observable<ApiResponseModel> {
-		// Check cache of observables
+		// headers obj
+		const headers: any = {};
+
+		//Check access token
+		if(this.accessToken) {
+			headers.Authorization = `Bearer ${this.accessToken}`
+		}
 
 		// Get options
 		const httpOptions = {
-			headers: new HttpHeaders({
-				Authorization: 'Bearer ' + this.accessToken
-			})
+			headers: new HttpHeaders(headers)
 		};
 
 		// Do request
@@ -130,11 +138,17 @@ export class ApiService {
 
 	// Update an object using PATCH
 	public partialUpdateObj(uri: string, id: number, obj: any): Observable<ApiResponseModel> {
-		// Post options
+		// headers obj
+		const headers: any = {};
+
+		//Check access token
+		if(this.accessToken) {
+			headers.Authorization = `Bearer ${this.accessToken}`
+		}
+
+		// Options
 		const httpOptions = {
-			headers: new HttpHeaders({
-				Authorization: 'Bearer ' + this.accessToken
-			})
+			headers: new HttpHeaders(headers)
 		};
 
 		// Url
@@ -151,11 +165,17 @@ export class ApiService {
 
 	// Delete an object using DELETE
 	public deleteObj(uri: string, id?: any): Observable<boolean> {
-		// Post options
+		// headers obj
+		const headers: any = {};
+
+		//Check access token
+		if(this.accessToken) {
+			headers.Authorization = `Bearer ${this.accessToken}`
+		}
+
+		// Options
 		const httpOptions = {
-			headers: new HttpHeaders({
-				'Authorization': 'Bearer ' + this.accessToken
-			})
+			headers: new HttpHeaders(headers)
 		};
 
 		// Url
@@ -172,11 +192,17 @@ export class ApiService {
 
 	// Create an object with POST
 	public createObj(uri: string, obj: any): Observable<ApiResponseModel> {
-		// Post options
+		// headers obj
+		const headers: any = {};
+
+		//Check access token
+		if(this.accessToken) {
+			headers.Authorization = `Bearer ${this.accessToken}`
+		}
+
+		// Options
 		const httpOptions = {
-			headers: new HttpHeaders({
-				Authorization: 'Bearer ' + this.accessToken
-			})
+			headers: new HttpHeaders(headers)
 		};
 
 		// Url
