@@ -18,6 +18,7 @@ export class ApiService {
 	// Models
 	private apiURL: string;
 	private accessToken: string;
+	private defaultApiResponseStrategy: ApiResponseStrategyInterface;
 	private previousApiResponseStrategy: ApiResponseStrategyInterface;
 	private activeApiResponseStrategy: ApiResponseStrategyInterface;
 	private apiResponseStrategies: ApiResponseStrategyInterface[];
@@ -33,6 +34,7 @@ export class ApiService {
 
 		// Set as active
 		this.activeApiResponseStrategy = this.apiResponseStrategies[0];
+		this.defaultApiResponseStrategy = this.apiResponseStrategies[0];
 	}
 
 	// Setters
@@ -49,6 +51,14 @@ export class ApiService {
 		if (strategy.getName()) {
 			this.apiResponseStrategies.push(strategy);
 		}
+	}
+
+	public setDefaultApiResponseStrategy(name: string): void {
+		//Change to default
+		this.changeApiResponseStrategy(name);
+
+		//Set as default
+		this.defaultApiResponseStrategy = this.activeApiResponseStrategy;
 	}
 
 	// Change active strategy
@@ -84,6 +94,13 @@ export class ApiService {
 		if (this.previousApiResponseStrategy !== undefined
 			&& this.previousApiResponseStrategy.getName() !== this.activeApiResponseStrategy.getName()) {
 			this.activeApiResponseStrategy = this.previousApiResponseStrategy;
+		}
+	}
+
+	// Restore prev active stategy
+	public restoreApiResponseStrategyFromDefault(): void {
+		if(this.defaultApiResponseStrategy) {
+			this.changeApiResponseStrategy(this.defaultApiResponseStrategy.getName());
 		}
 	}
 
