@@ -16,9 +16,6 @@ export class AppComponent {
 
 	// Models
 	menuItems: NavItemModel[] = [
-		new NavItemModel("Api", "fas fa-hand-holding-usd", null, [
-			new NavItemModel("Api service", "fas fa-home", "api/api-service")
-		]),
 		new NavItemModel("Structure", "fas fa-hand-holding-usd", null, [
 			new NavItemModel("Loader", "fas fa-home", "structure/loader"),
 			new NavItemModel("Card", "fas fa-home", "structure/card"),

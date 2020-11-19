@@ -7,7 +7,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgxGustavguezCoreModule } from 'projects/gustavguez/ngx-core/src/public-api';
 
 import { AppComponent } from './app.component';
-import { ApiServiceComponent } from './api/api-service/api-service.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -28,7 +27,6 @@ import { TagsComponent } from './forms/tags/tags.component';
 @NgModule({
 	declarations: [
 		AppComponent,
-		ApiServiceComponent,
 		DashboardComponent,
 		LoaderComponent,
 		CardComponent,

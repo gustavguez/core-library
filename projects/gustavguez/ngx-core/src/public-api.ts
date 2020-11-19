@@ -2,14 +2,6 @@
 export * from './lib/status.enum';
 export * from './lib/ngx-gustavguez-core.module';
 
-// Api
-export * from './lib/api/api-response-strategies/api-root-response-strategy.model';
-export * from './lib/api/api-response-strategies/api-data-response-strategy.model';
-export * from './lib/api/api-response-strategies/api-response-strategy.interface';
-export * from './lib/api/api-response.model';
-export * from './lib/api/json-model.interface';
-export * from './lib/api/api.service';
-
 // Forms
 export * from './lib/forms/ngx-gustavguez-button/ngx-gustavguez-button.component';
 export * from './lib/forms/ngx-gustavguez-input-holder/ngx-gustavguez-input-holder.component';
