@@ -19,6 +19,8 @@ export class InputComponent implements OnInit {
 	ngOnInit(): void {
 		// Create form
 		this.form = this.formBuilder.group({
+			logo: this.formBuilder.control(''),
+			logoName: this.formBuilder.control('logo.png'),
 			description: this.formBuilder.control('', Validators.required)
 		});
 	}

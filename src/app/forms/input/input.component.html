@@ -67,6 +67,21 @@
 						[text]="'Send form'"></ngx-gustavguez-submit>
 				</form>
 			</div>
+			<div class="col-md-6 col-sm-6 col-12 p-3">
+				<form [formGroup]="form" (submit)="onSubmit()">
+					<ngx-gustavguez-file
+						[form]="form"
+						[label]="'Type file:'"
+						[placeholder]="'Enter description'"
+						[controlName]="'logo'"
+						[controlFileName]="'logoName'"
+						[controlId]="'description'"
+						[requiredErrorText]="'This field is required.'"></ngx-gustavguez-file>	
+
+					<ngx-gustavguez-submit
+						[text]="'Send form'"></ngx-gustavguez-submit>
+				</form>
+			</div>
 		</div>
 	</div>
 </section>

@@ -10,6 +10,8 @@
             <div class="modal-header">
                 <h5 class="modal-title">{{ titleText }}</h5>
                 
+                <ng-content select="popup-header"></ng-content>
+
                 <button type="button" class="close" (click)="onClosePopup()">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -20,6 +22,9 @@
             </div>
 
             <div class="modal-footer">
+                
+                <ng-content select="popup-footer"></ng-content>
+
                 <button 
                     (click)="onClosePopup()"
                     type="button" 

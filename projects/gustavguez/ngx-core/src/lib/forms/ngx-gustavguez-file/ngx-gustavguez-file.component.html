@@ -1,0 +1,41 @@
+<div class="input-group" [formGroup]="form">
+	<ngx-gustavguez-input-holder
+		[form]="form"
+		[controlName]="controlName"
+		[requiredErrorText]="requiredErrorText">
+		<label 
+			*ngIf="label"
+			[for]="controlId">{{ label }}</label>
+
+		<input 
+			#input
+			(change)="onEmitChange()"
+			type="file">
+		
+		<div class="form-control">
+			<button 
+				(click)="input.click()"
+				class="btn btn-primary">
+				<i class="far fa-folder"></i>
+			</button>
+
+			<span 
+				class="filename">
+				<span *ngIf="form.get(controlFileName).value && !form.get(controlName).value">
+					{{ form.get(controlFileName).value }}
+				</span>
+				<span 
+					*ngIf="form.get(controlName).value">
+					{{ form.get(controlName).value.name }}
+				</span>
+			</span>
+
+			<button 
+				*ngIf="form.get(controlFileName).value || form.get(controlName).value"
+				(click)="onClear()"
+				class="btn btn-delete">
+				<i class="fas fa-trash text-danger"></i>
+			</button>
+		</div>
+	</ngx-gustavguez-input-holder>
+</div>

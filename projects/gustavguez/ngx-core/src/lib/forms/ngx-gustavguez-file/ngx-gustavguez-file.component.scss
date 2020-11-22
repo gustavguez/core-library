@@ -1,0 +1,21 @@
+input {
+    display: none;
+}
+
+.form-control {
+    height: 50px;
+}
+
+.filename {
+    padding-left: 10px;
+    width: calc(100% - 90px);
+    display: inline-block;
+    height: 25px;
+    overflow: hidden;
+    vertical-align: middle;
+    word-break: break-word;
+}
+
+.btn-delete {
+    float: right;
+}

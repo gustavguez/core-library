@@ -10,6 +10,7 @@ import { NgxGustavguezSelectComponent } from './forms/ngx-gustavguez-select/ngx-
 import { NgxGustavguezSubmitComponent } from './forms/ngx-gustavguez-submit/ngx-gustavguez-submit.component';
 import { NgxGustavguezTagsComponent } from './forms/ngx-gustavguez-tags/ngx-gustavguez-tags.component';
 import { NgxGustavguezTextareaComponent } from './forms/ngx-gustavguez-textarea/ngx-gustavguez-textarea.component';
+import { NgxGustavguezFileComponent } from './forms/ngx-gustavguez-file/ngx-gustavguez-file.component';
 import { NgxGustavguezMainContainerDirective } from './layout/ngx-gustavguez-main-container/ngx-gustavguez-main-container.directive';
 import { NgxGustavguezMainSidebarComponent } from './layout/ngx-gustavguez-main-sidebar/ngx-gustavguez-main-sidebar.component';
 import { NgxGustavguezNavComponent } from './layout/ngx-gustavguez-nav/ngx-gustavguez-nav.component';
@@ -35,6 +36,7 @@ import { NgxGustavguezToastsComponent } from './structure/ngx-gustavguez-toasts/
 		NgxGustavguezSubmitComponent,
 		NgxGustavguezTagsComponent,
 		NgxGustavguezTextareaComponent,
+		NgxGustavguezFileComponent,
 
 		NgxGustavguezMainContainerDirective,
 		NgxGustavguezMainSidebarComponent,
@@ -66,6 +68,7 @@ import { NgxGustavguezToastsComponent } from './structure/ngx-gustavguez-toasts/
 		NgxGustavguezSubmitComponent,
 		NgxGustavguezTagsComponent,
 		NgxGustavguezTextareaComponent,
+		NgxGustavguezFileComponent,
 
 		NgxGustavguezMainContainerDirective,
 		NgxGustavguezMainSidebarComponent,

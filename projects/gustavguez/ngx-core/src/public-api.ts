@@ -10,6 +10,7 @@ export * from './lib/forms/ngx-gustavguez-select/ngx-gustavguez-select.component
 export * from './lib/forms/ngx-gustavguez-submit/ngx-gustavguez-submit.component';
 export * from './lib/forms/ngx-gustavguez-tags/ngx-gustavguez-tags.component';
 export * from './lib/forms/ngx-gustavguez-textarea/ngx-gustavguez-textarea.component';
+export * from './lib/forms/ngx-gustavguez-file/ngx-gustavguez-file.component';
 
 // Utilities
 export * from './lib/utilities/array.utility';
