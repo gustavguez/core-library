@@ -13,6 +13,6 @@ export class TableOptionsModel {
 		public fields: string[]
 	) {
 		// Default actions
-		this.actions = [new TableShowActionModel()];
+		this.actions = [];
 	}
 }
