@@ -1,4 +1,5 @@
-import { StatusEnum, TableActionModel } from "@gustavguez/ngx-core";
+import { TableActionModel } from "../table-action.model";
+import { StatusEnum } from "../../../status.enum";
 
 export class TableDeleteActionModel extends TableActionModel {
 

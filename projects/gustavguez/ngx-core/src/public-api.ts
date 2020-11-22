@@ -46,4 +46,6 @@ export * from './lib/structure/ngx-gustavguez-table/table-options.model';
 export * from './lib/structure/ngx-gustavguez-table/table-action.model';
 export * from './lib/structure/ngx-gustavguez-table/table-action.argument';
 export * from './lib/structure/ngx-gustavguez-table/actions/table-show-action.model';
+export * from './lib/structure/ngx-gustavguez-table/actions/table-edit-action.model';
+export * from './lib/structure/ngx-gustavguez-table/actions/table-delete-action.model';
 export * from './lib/structure/ngx-gustavguez-table/ngx-gustavguez-table.component';

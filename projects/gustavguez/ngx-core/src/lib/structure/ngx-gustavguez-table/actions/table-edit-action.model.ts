@@ -1,4 +1,4 @@
-import { TableActionModel } from "@gustavguez/ngx-core";
+import { TableActionModel } from "../table-action.model";
 
 export class TableEditActionModel extends TableActionModel {
 
