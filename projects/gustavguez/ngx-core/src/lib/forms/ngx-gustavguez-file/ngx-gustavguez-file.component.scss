@@ -1,5 +1,9 @@
 input {
-    display: none;
+    visibility: visible;
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+    width: calc(100% - 50px);
 }
 
 .form-control {

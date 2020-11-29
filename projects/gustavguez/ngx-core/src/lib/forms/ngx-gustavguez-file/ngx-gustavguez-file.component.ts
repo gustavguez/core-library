@@ -17,7 +17,7 @@ export class NgxGustavguezFileComponent {
 	@Input() requiredErrorText: string;
 
 	//ViewChild
-	@ViewChild('input') input: ElementRef;
+	@ViewChild('file') input: ElementRef;
 
 	// Outputs
 	@Output() onChange: EventEmitter<any> = new EventEmitter();
