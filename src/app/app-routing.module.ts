@@ -16,6 +16,7 @@ import { InputComponent } from './forms/input/input.component';
 import { TextareaComponent } from './forms/textarea/textarea.component';
 import { SelectComponent } from './forms/select/select.component';
 import { TagsComponent } from './forms/tags/tags.component';
+import { BreadcrumbComponent } from './structure/breadcrumb/breadcrumb.component';
 
 // Routes
 const appRoutes: Routes = [
@@ -51,6 +52,10 @@ const appRoutes: Routes = [
 	{
 		path: "structure/table",
 		component: TableComponent
+	},
+	{
+		path: "structure/breadcrumbs",
+		component: BreadcrumbComponent
 	},
 	// FORMS
 	{

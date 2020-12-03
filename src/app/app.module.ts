@@ -23,6 +23,7 @@ import { InputComponent } from './forms/input/input.component';
 import { TextareaComponent } from './forms/textarea/textarea.component';
 import { SelectComponent } from './forms/select/select.component';
 import { TagsComponent } from './forms/tags/tags.component';
+import { BreadcrumbComponent } from './structure/breadcrumb/breadcrumb.component';
 
 @NgModule({
 	declarations: [
@@ -40,7 +41,8 @@ import { TagsComponent } from './forms/tags/tags.component';
 		InputComponent,
 		TextareaComponent,
 		SelectComponent,
-		TagsComponent
+		TagsComponent,
+		BreadcrumbComponent
 	],
 	imports: [
 		BrowserModule,

@@ -25,6 +25,7 @@ import { NgxGustavguezPageHeaderComponent } from './structure/ngx-gustavguez-pag
 import { NgxGustavguezPopupComponent } from './structure/ngx-gustavguez-popup/ngx-gustavguez-popup.component';
 import { NgxGustavguezTableComponent } from './structure/ngx-gustavguez-table/ngx-gustavguez-table.component';
 import { NgxGustavguezToastsComponent } from './structure/ngx-gustavguez-toasts/ngx-gustavguez-toasts.component';
+import { NgxGustavguezBreadcrumbComponent } from './structure/ngx-gustavguez-breadcrumb/ngx-gustavguez-breadcrumb.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { NgxGustavguezToastsComponent } from './structure/ngx-gustavguez-toasts/
 		NgxGustavguezPageHeaderComponent,
 		NgxGustavguezPopupComponent,
 		NgxGustavguezTableComponent,
-		NgxGustavguezToastsComponent
+		NgxGustavguezToastsComponent,
+		NgxGustavguezBreadcrumbComponent
 	],
 	imports: [
 		CommonModule,
@@ -85,7 +87,8 @@ import { NgxGustavguezToastsComponent } from './structure/ngx-gustavguez-toasts/
 		NgxGustavguezPageHeaderComponent,
 		NgxGustavguezPopupComponent,
 		NgxGustavguezTableComponent,
-		NgxGustavguezToastsComponent
+		NgxGustavguezToastsComponent,
+		NgxGustavguezBreadcrumbComponent
 	]
 })
 export class NgxGustavguezCoreModule { }

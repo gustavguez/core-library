@@ -24,6 +24,7 @@ export class AppComponent {
 			new NavItemModel("Popup", "fas fa-home", "structure/popup"),
 			new NavItemModel("Toasts", "fas fa-home", "structure/toasts"),
 			new NavItemModel("Table", "fas fa-home", "structure/table"),
+			new NavItemModel("Breadcrumbs", "fas fa-home", "structure/breadcrumbs"),
 		]),
 		new NavItemModel("Forms", "fas fa-hand-holding-usd", null, [
 			new NavItemModel("Button", "fas fa-home", "forms/button"),
