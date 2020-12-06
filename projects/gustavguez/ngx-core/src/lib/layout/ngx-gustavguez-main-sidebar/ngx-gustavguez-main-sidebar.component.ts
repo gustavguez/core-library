@@ -16,6 +16,7 @@ export class NgxGustavguezMainSidebarComponent implements OnInit {
 	@Input() userIsLogged: boolean;
 	@Input() userAvatar: string;
 	@Input() userName: string;
+	@Input() secondaryText: string;
 	@Input() menuItems: NavItemModel[];
 
 	// Outputs

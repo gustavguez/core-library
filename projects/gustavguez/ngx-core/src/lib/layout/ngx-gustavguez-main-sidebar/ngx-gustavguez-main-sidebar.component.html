@@ -26,6 +26,11 @@
             </div>
             <div class="info">
                 <a class="d-block">{{ userName }}</a>
+                <span 
+                    *ngIf="!!secondaryText"
+                    class="d-block text-light font-weight-light secondary-text">
+                    {{ secondaryText }}
+                </span>
             </div>
         </div>
 

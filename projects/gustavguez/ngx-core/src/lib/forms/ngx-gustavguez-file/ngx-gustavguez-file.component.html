@@ -18,10 +18,13 @@
 				</span>
 			</span>
 
-			<button *ngIf="form.get(controlFileName).value || form.get(controlName).value" (click)="onClear()"
+			<a 
+				tabindex="-1" 
+				*ngIf="form.get(controlFileName).value || form.get(controlName).value" 
+				(click)="onClear()"
 				class="btn btn-delete">
 				<i class="fas fa-trash text-danger"></i>
-			</button>
+			</a>
 		</div>
 	</ngx-gustavguez-input-holder>
 </div>

@@ -69,6 +69,14 @@
 			</div>
 			<div class="col-md-6 col-sm-6 col-12 p-3">
 				<form [formGroup]="form" (submit)="onSubmit()">
+					<ngx-gustavguez-input
+						[form]="form"
+						[type]="'text'"
+						[label]="'Type text:'"
+						[placeholder]="'Enter description'"
+						[controlName]="'description'"
+						[controlId]="'description'"
+						[requiredErrorText]="'This field is required.'"></ngx-gustavguez-input>	
 					<ngx-gustavguez-file
 						[form]="form"
 						[label]="'Type file:'"
