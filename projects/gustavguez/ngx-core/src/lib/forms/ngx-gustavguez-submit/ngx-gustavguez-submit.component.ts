@@ -12,6 +12,7 @@ export class NgxGustavguezSubmitComponent {
 	@Input() text: string;
 	@Input() loadingText: string;
 	@Input() loading: string;
+	@Input() formId: string;
 	@Input() status: StatusEnum;
 
 	// Output
