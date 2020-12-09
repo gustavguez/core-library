@@ -20,7 +20,7 @@ export class SelectComponent implements OnInit {
 	ngOnInit(): void {
 		// Create form
 		this.form = this.formBuilder.group({
-			option: this.formBuilder.control(null, Validators.required)
+			option: this.formBuilder.control('', Validators.required)
 		});
 
 		// Create options
