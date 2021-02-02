@@ -20,6 +20,7 @@
 				<ng-container *ngFor="let action of options.actions">
 					<button 
 						*ngIf="action.mustDisplay(item)"
+						[disabled]="action.mustDisable(item)"
 						[title]="action.text"
 						(click)="onActionClick(action, item)"
 						class="btn btn-{{ action.status }} ml-1 {{ action.btnClasses }}">

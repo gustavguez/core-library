@@ -10,7 +10,8 @@ export class TableActionModel {
 	constructor(
 		public icon?: string,
 		public text?: string,
-		public mustDisplayCallback?: (model: any) => boolean) {
+		public mustDisplayCallback?: (model: any) => boolean,
+		public mustDisableCallback?: (model: any) => boolean) {
 		// By default is primary
 		this.status = StatusEnum.PRIMARY;
 	}
@@ -18,5 +19,8 @@ export class TableActionModel {
 	// Abstract methods
 	public mustDisplay(model: any): boolean {
 		return this.mustDisplayCallback instanceof Function ? this.mustDisplayCallback(model) : true;
+	}
+	public mustDisable(model: any): boolean {
+		return this.mustDisableCallback instanceof Function ? this.mustDisableCallback(model) : false;
 	}
 }
