@@ -10,7 +10,8 @@
 			class="custom-select"
 			(change)="onEmitChange()"
 			[id]="controlId"
-			[formControlName]="controlName">
+			[formControlName]="controlName"
+			[disabled]="disabled">
 			<option 
 				[value]="''" 
 				selected>{{ placeholder }}</option>

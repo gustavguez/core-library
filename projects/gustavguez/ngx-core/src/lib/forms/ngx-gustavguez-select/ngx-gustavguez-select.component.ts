@@ -10,6 +10,7 @@ export class NgxGustavguezSelectComponent {
 	// Inputs
 	@Input() form: FormGroup;
 	@Input() label: string;
+	@Input() disabled: boolean;
 	@Input() controlId: string;
 	@Input() controlName: string;
 	@Input() requiredErrorText: string;
