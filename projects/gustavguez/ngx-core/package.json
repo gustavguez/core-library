@@ -1,6 +1,6 @@
 {
   "name": "@gustavguez/ngx-core",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "repository": {
     "type": "git",
     "url": "https://github.com/gustavguez/core-library"
@@ -10,9 +10,7 @@
       "email" : "gustavguez@gmail.com", 
       "url" : "http://gustavorodriguez.com.uy"
    },
-  "dependencies": {
-    "moment": "^2.24.0",
-    "admin-lte": "^3.0.5",    
+  "dependencies": {  
     "tslib": "^2.0.0"
   }
 }
