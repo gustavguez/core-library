@@ -13,6 +13,7 @@ export class NgxGustavguezButtonComponent {
 	@Input() loadingText: string;
 	@Input() loading: string;
 	@Input() status: StatusEnum;
+	@Input() disabled: boolean;
 
 	// Output
 	@Output() onClick: EventEmitter<void> = new EventEmitter();

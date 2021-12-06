@@ -1,6 +1,7 @@
 <button 
     type="button" 
 	class="btn btn-{{ status ? status : 'primary' }} btn-block"
+    [disabled]="disabled"
 	(click)="onDoClick()">
     <span *ngIf="!loading">{{ text }}</span>
 
