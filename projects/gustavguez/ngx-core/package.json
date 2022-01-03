@@ -1,16 +1,16 @@
 {
   "name": "@gustavguez/ngx-core",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "repository": {
     "type": "git",
     "url": "https://github.com/gustavguez/core-library"
   },
-  "author": { 
-      "name" : "Gustavo Rodríguez", 
-      "email" : "gustavguez@gmail.com", 
-      "url" : "http://gustavorodriguez.com.uy"
-   },
-  "dependencies": {  
+  "author": {
+    "name": "Gustavo Rodríguez",
+    "email": "gustavguez@gmail.com",
+    "url": "http://gustavorodriguez.com.uy"
+  },
+  "dependencies": {
     "tslib": "^2.0.0"
   }
 }
