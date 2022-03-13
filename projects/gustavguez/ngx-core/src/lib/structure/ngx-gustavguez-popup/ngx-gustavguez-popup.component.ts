@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class NgxGustavguezPopupComponent {
 	// Inputs and Outputs
 	@Input() state: boolean;
+	@Input() large: boolean;
 	@Input() titleText: string;
 	@Input() closeText: string;
 	@Output() onClose: EventEmitter<void> = new EventEmitter();
